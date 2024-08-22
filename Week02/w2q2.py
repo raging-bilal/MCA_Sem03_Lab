@@ -1,18 +1,20 @@
-# Write a program to print sum of first 10 numbers.
+# Write a program to count the total number of digits in a number using a while loop.
 
 
 
-# i=1
-sum=0
 
-# while i<=10:
-for i in range(1,11):
-    sum=sum+i
-    i+=1
-    
-print(sum)
+def count_digits(num):
+    count = 0
+    while num > 0:
+        num = num // 10  
+        count += 1  
+    return count
 
 
+
+num = int(input("Enter an integer: "))
+total_digits = count_digits(num)
+print("The total number of digits are: ", total_digits)
 
 
 
