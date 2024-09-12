@@ -2,9 +2,12 @@
 
 
 
-def remove_characters(string, n):
-    return string[:n]  
+def remove_char(s,n):
+    return s[0:n-1]
 
-result = remove_characters("aligarh", 2)
-print(result)  
+s="aligarh"
+n=3
 
+r=remove_char(s,n)
+
+print(r)
