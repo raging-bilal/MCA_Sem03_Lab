@@ -8,6 +8,6 @@ print(a)
 
 print("The list of square are as follows: ")
 for i in range(0,l):
-    sq=a[i] * a[i]
+    sq=a[i] ** 2
 
     print(sq , end="  ")
