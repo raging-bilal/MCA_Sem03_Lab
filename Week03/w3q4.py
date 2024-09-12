@@ -1,7 +1,14 @@
 # 4. Write a program to accept a string from the user and display characters that are present at an even index number.
 
 
-str = input("Enter a string: ")
+s=input("Enter the String: ")
+l=len(s)
+print("The length of the string is: ", l)
 
-for i in range(0, len(str), 2):
-    print(str[i])
+
+
+print("Print characters from a string which are present at an even index numbers:")
+
+for i in range(0,l,2):
+    print(s[i],end=" ")
+
