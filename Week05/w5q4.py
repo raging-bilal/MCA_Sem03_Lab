@@ -2,6 +2,7 @@
 
 
 def create_custom_list(list1, list2):
+    
     odd_from_list1 = [num for num in list1 if num % 2 != 0]
     even_from_list2 = [num for num in list2 if num % 2 == 0]
     return odd_from_list1 + even_from_list2
