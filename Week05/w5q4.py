@@ -9,5 +9,6 @@ def create_custom_list(list1, list2):
 
 list1 = [1, 2, 3, 4, 5]
 list2 = [6, 7, 8, 9, 10]
+
 new_list = create_custom_list(list1, list2)
 print("New List:", new_list)
