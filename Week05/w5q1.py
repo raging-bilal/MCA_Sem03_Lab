@@ -9,6 +9,8 @@ def generate_otp():
     otp = secrets.randbelow(10**6)
     return f'{otp:06}'  
 
+
+
 otp = generate_otp()
 print("Generated OTP:", otp)
 
