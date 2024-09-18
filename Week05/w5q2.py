@@ -8,6 +8,7 @@ def pick_random_char(user_string):
     if not user_string:
         return None  
     return random.choice(user_string)
+    
 
 user_string = input("Enter a string: ")
 random_char = pick_random_char(user_string)
