@@ -2,6 +2,8 @@
 
 import random
 
+
+
 def pick_random_char(user_string):
     if not user_string:
         return None  
