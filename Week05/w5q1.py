@@ -1,5 +1,8 @@
 # 1. Write a program to generate 6 digit random secure OTP.
 
+
+
+
 import secrets
 
 def generate_otp():
