@@ -3,17 +3,14 @@
 
 
 
-import secrets
+import secrets as sec
 
 def generate_otp():
-    otp = secrets.randbelow(10**6)
-    return f'{otp:06}'  
+    otp=sec.randbelow(10**6)
+    return f"{otp:06}"
 
-
-
-otp = generate_otp()
-print("Generated OTP:", otp)
-
+result=generate_otp()
+print("The 6 digits OTP: ",result)
 
 
 
