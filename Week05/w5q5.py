@@ -2,14 +2,19 @@
 
 
 
+
 import numpy as np
 
-my_array=np.array([
-    [1,2,3,4],
-    [5,6,7,8],
-    [9,10,11,12],
-    [13,14,15,16]
-])
+rl=int(input("Enter the number of rows: "))
+cl=int(input("Enter the number of columns: "))
 
-new_array=my_array[1::2, ::2]
-print(new_array)
+my_array=np.random.randint(1,100,(rl,cl))
+
+
+print(my_array)
+
+rows=my_array[::2,:]
+cols=my_array[:,1::2]
+
+print("rows: " ,rows)
+print("cols: " ,cols)
