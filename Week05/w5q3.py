@@ -9,6 +9,8 @@ import string
 import secrets
 
 
+
+
 def generate_password():
     
     upper_case = ''.join(secrets.choice(string.ascii_uppercase) for _ in range(2))
