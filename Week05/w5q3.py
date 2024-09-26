@@ -1,32 +1,28 @@
 # 3. Write a program to generate a random Password which meets the following conditions
 
 # a. Password length must be 10 characters long.
-
 # b. It must contain at least 2 upper case letters, 1 digit, and 1 special symbol.
 
-import random
-import string
-import secrets
 
+import random as ran
+import string as str
 
+U=str.ascii_uppercase
+L=str.ascii_lowercase
+D=str.digits
+S=str.punctuation
 
+password=[]
+password.extend(ran.choices(U,k=2))
+password.append(ran.choice(D))
+password.append(ran.choice(S))
 
-def generate_password():
-    
-    upper_case = ''.join(secrets.choice(string.ascii_uppercase) for _ in range(2))
-    digits = secrets.choice(string.digits)
-    special_symbol = secrets.choice(string.punctuation)
-    
-    
-    remaining_length = 10 - len(upper_case + digits + special_symbol)
-    other_chars = ''.join(secrets.choice(string.ascii_letters + string.digits + string.punctuation) for _ in range(remaining_length))
-    
-   
-    password_list = list(upper_case + digits + special_symbol + other_chars)
-    random.shuffle(password_list)
-    
-    return ''.join(password_list)
+rem_len=10-len(password)
 
-password = generate_password()
-print("Generated Password:", password)
+all_char=U+L+D+S
+password.extend(ran.choices(all_char,k=rem_len))
 
+ran.shuffle(password)
+password="".join(password)
+print("The generated password: ")
+print(password)
