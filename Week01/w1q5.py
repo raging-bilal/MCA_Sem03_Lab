@@ -3,5 +3,5 @@
 num=int(input("Enter a number till we want to calculate the cube: "))
 
 for i in range(num):
-    print((i+1)**3)
-    i+=1
+    print(f"The cube of {i+1} is: ",(i+1)**3)
+    
