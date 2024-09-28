@@ -8,6 +8,8 @@ def concatenate_tuples(tuple1, tuple2):
     return concatenated_tuple
 
 
+
+
 tuple1 = (1, 2, 3)
 tuple2 = (4, 5, 6)
 result = concatenate_tuples(tuple1, tuple2)
