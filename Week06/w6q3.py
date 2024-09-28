@@ -6,6 +6,8 @@ def sum_of_squares_of_digits(number):
     if len(str(number)) != 4:
         print("Please enter a 4-digit number.")
         return
+
+
     
     first_two_digits = int(str(number)[:2])
     last_two_digits = int(str(number)[-2:])
