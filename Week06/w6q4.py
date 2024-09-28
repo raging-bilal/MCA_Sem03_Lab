@@ -14,6 +14,8 @@ def decrypt_string(encrypted_string, short_string):
         decrypted += encrypted_string[i]
     return decrypted
 
+
+
 main_string = "hello"
 short_string = "!"
 encrypted = encrypt_string(main_string, short_string)
