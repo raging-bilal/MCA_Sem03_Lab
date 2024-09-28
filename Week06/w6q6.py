@@ -17,5 +17,6 @@ def analyze_string(input_string):
     print(f"Number of digits: {digit_count}")
 
 
+
 input_string = input("Enter a string: ")
 analyze_string(input_string)
