@@ -8,6 +8,8 @@ def random_char(my_string):
     else:
         return ran.choice(my_string)
 
+
+
 my_string=input("Enter the String: ")
 
 result=random_char(my_string)
