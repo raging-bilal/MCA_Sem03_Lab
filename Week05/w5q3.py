@@ -12,6 +12,8 @@ L=str.ascii_lowercase
 D=str.digits
 S=str.punctuation
 
+
+
 password=[]
 password.extend(ran.choices(U,k=2))
 password.append(ran.choice(D))
