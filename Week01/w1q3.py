@@ -9,6 +9,9 @@ for i in range(n):
 
 print("The final list: ",lst)
 
+
+
+
 new_lst=[]
 for i in lst:
     if i%5==0:
