@@ -6,6 +6,9 @@ num2=int(input("Enter the second number: "))
 
 product= num1 * num2
 
+
+
+
 print(product)
 
 if product <=5000:
