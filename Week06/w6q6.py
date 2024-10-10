@@ -4,19 +4,27 @@
 # c. Total number of alphabets
 # d. Number of digit
 
+s=input("Enter the string: ")
 
-def analyze_string(input_string):
-    uppercase_count = sum(1 for char in input_string if char.isupper())
-    lowercase_count = sum(1 for char in input_string if char.islower())
-    alphabet_count = sum(1 for char in input_string if char.isalpha())
-    digit_count = sum(1 for char in input_string if char.isdigit())
+n_u=0
+n_l=0
+n_a=0
+n_d=0
 
-    print(f"Number of uppercase characters: {uppercase_count}")
-    print(f"Number of lowercase characters: {lowercase_count}")
-    print(f"Total number of alphabets: {alphabet_count}")
-    print(f"Number of digits: {digit_count}")
+for i in s:
+    if i.isupper():
+        n_u+=1
+    if i.islower():
+        n_l+=1
+    if i.isalpha():
+        n_a+=1
+    if i.isdigit():
+        n_d+=1
+
+print("Upper case: ",n_u)
+print("Lowercase: ", n_l)
+print("Alphabet: ",n_a)
+print("Digit: ",n_d)
 
 
 
-input_string = input("Enter a string: ")
-analyze_string(input_string)
