@@ -2,18 +2,16 @@
 
 
 
-def sum_of_squares_of_digits(number):
-    if len(str(number)) != 4:
-        print("Please enter a 4-digit number.")
-        return
+def sqnum(num):
+    if len(str(num))!=4:
+        return "INVALID INPUT, Enter 4 digit number only!"
+
+    else:
+        s1=int(str(num)[:2])
+        s2=int(str(num)[-2:])
+        res=s1**2 + s2**2
+        return res
 
 
-    
-    first_two_digits = int(str(number)[:2])
-    last_two_digits = int(str(number)[-2:])
-    
-    result = first_two_digits**2 + last_two_digits**2
-    print(f"The sum of squares is: {result}")
-
-
-sum_of_squares_of_digits(1234)
+num=int(input('Enter 4 digit number: '))
+print(sqnum(num))
