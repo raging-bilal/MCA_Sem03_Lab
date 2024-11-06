@@ -1,0 +1,6 @@
+DID,DName,DLocation
+1,Engineering,Bangalore
+2,Marketing,Mumbai
+3,HR,Delhi
+4,Sales,Chennai
+5,Finance,Hyderabad
