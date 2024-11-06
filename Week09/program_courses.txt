@@ -1,0 +1,7 @@
+Computer Science,Data Structures
+Computer Science,Algorithms
+Mathematics,Calculus
+Mathematics,Linear Algebra
+Physics,Mechanics
+Computer Science,Operating Systems
+Physics,Quantum Physics
